@@ -12,18 +12,19 @@
         #box {
         position: absolute;
         z-index: 1;
-        background:#123456;
+        background:rgba(12,0,78,0.2);
         top: 10px;
-        right: 10px;
+        right: 0px;
         border-radius: 3px;
-        width: 600px;
+        width: 100%;
         border: 1px solid rgba(0,0,0,0.4);
         font-family: 'Open Sans', sans-serif;}
+        h3 {font-size: 14px;color: rgb(255, 34, 0);margin-left: 12px}
     </style>
 </head>
 <body>
 
-<div id='box'><h1>MabBox System</h1></div>
+<div id='box'><h3>Construction Projects</h3></div>
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZXJkYWciLCJhIjoiY2luZXdmZDY1MHhsOHYwa3Fhdm9zNmYzNCJ9.sO41JivcE8ukDLXrc2aXGA';
@@ -49,6 +50,7 @@ map.on('load', function () {
           "source": "markers",
           "layout": {
               "icon-image": "star-15",
+
 
           }
       });
