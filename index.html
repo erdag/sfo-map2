@@ -9,10 +9,20 @@
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+        #box {background: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        border-radius: 3px;
+        width: 120px;
+        border: 1px solid rgba(0,0,0,0.4);
+        font-family: 'Open Sans', sans-serif;}
     </style>
 </head>
 <body>
 
+<div id='box'>MabBox System</div>
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZXJkYWciLCJhIjoiY2luZXdmZDY1MHhsOHYwa3Fhdm9zNmYzNCJ9.sO41JivcE8ukDLXrc2aXGA';
@@ -20,7 +30,7 @@ var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/erdag/cio7pvyw10016adnmii2vjh2x', //stylesheet location
     center: [-122.39799499511719, 37.79203240455262], // starting position
-    pitch: 60, // pitch in degrees
+    pitch: 30, // pitch in degrees
     bearing: -60, // bearing in degrees
     zoom: 18 // starting zoom
 });
