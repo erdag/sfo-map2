@@ -20,6 +20,8 @@ var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/erdag/cio7pvyw10016adnmii2vjh2x', //stylesheet location
     center: [-122.39799499511719, 37.79203240455262], // starting position
+    pitch: 60, // pitch in degrees
+    bearing: -60, // bearing in degrees
     zoom: 18 // starting zoom
 });
 map.on('load', function () {
