@@ -24,35 +24,25 @@ var map = new mapboxgl.Map({
 });
 map.on('load', function () {
     // Add marker data as a new GeoJSON source.
-    map.addSource('states', {
+    map.addSource('markers', {
         'type': 'geojson',
         'data': 'https://rawgit.com/erdag/sfo-map2/master/sensors.geojson'
     });
 
     // Add a layer showing the markers.
     map.addLayer({
-        'id': 'states-layer',
-        'type': 'fill',
-        'source': 'states',
-        'paint': {
-            'fill-color': 'rgba(200, 100, 240, 0.4)',
-            'fill-outline-color': 'rgba(200, 100, 240, 1)'
-        }
-    });
+          "id": "markers",
+          "type": "symbol",
+          "source": "markers",
+          "layout": {
+              "icon-image": "{marker-symbol}-15",
+              "text-field": "{title}",
+              "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+              "text-offset": [0, 0.6],
+              "text-anchor": "top"
+          }
+      });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </script>
