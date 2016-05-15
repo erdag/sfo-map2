@@ -24,10 +24,10 @@
     </style>
 </head>
 <body>
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.1.0/mapbox-gl-geocoder.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.1.0/mapbox-gl-geocoder.js'></script>// Geocoder
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.1.0/mapbox-gl-geocoder.css' type='text/css' />
 
-<div id='box'><h3>Construction Projects</h3></div>
+<div id='box'><h3>Caltrans Construction Projects</h3></div>
 <div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiZXJkYWciLCJhIjoiY2luZXdmZDY1MHhsOHYwa3Fhdm9zNmYzNCJ9.sO41JivcE8ukDLXrc2aXGA';
@@ -54,8 +54,6 @@ map.on('load', function () {
           "source": "markers",
           "layout": {
               "icon-image": "star-15",
-
-
           }
       });
 });
