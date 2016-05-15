@@ -26,7 +26,7 @@ map.on('load', function () {
     // Add marker data as a new GeoJSON source.
     map.addSource('markers', {
         'type': 'geojson',
-        'data': 'https://rawgit.com/erdag/sfo-map2/master/sensors.html'
+        'data': 'https://rawgit.com/erdag/sfo-map2/master/mapg.html'
     });
 
     // Add a layer showing the markers.
@@ -36,7 +36,7 @@ map.on('load', function () {
           "source": "markers",
           "layout": {
               "icon-image": "{marker-symbol}-15",
-              
+
           }
       });
 });
